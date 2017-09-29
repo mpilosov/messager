@@ -7,12 +7,12 @@ The work is done in `message.py` and you use `send_message.py` to send the messa
 ---
 _Dependencies_: smtplib
 
-You need to create _your own_ `credentials.py` file that has two variables defined in it: `gmail_usr` and `gmail_pwd` with your credentials.
+You need to create _your own_ `credentials.py` file that has two variables defined in it: `gmail_user` and `gmail_pwd` with your credentials.
 We suggest using a dummy account that is not linked to any personal information. 
 For example, your `credentials.py` file might be create as such from the command line:
 
 ```
-echo " gmail_usr, gmail_pwd = 'myusername', 'mypassword' " > credentials.py
+echo " gmail_user, gmail_pwd = 'myusername', 'mypassword' " > credentials.py
 ```
 
 ### Disclaimer
