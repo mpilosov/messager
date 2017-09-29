@@ -1,6 +1,6 @@
 #!/usr/bin/python
 # This script allows you to send a text to (the most common) carriers.
-# Usage: python sendmsg.py phone_number carrier message 
+# Usage: python send_message.py phone_number carrier message 
 # where the last three arguments are all strings
 # carrier must be 'att', 'ver', 'tmo', or 'spr' 
 

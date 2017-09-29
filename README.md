@@ -29,6 +29,6 @@ Mostly I use this code to send reminders and updates on remote jobs.
 To use, follow the comments in `send_message.py` or the following example (be aware that some characters need to be specially encoded. If you want to add support for this, please submit a PR):
 
 ```
-python send_message.py 3038675309 verizon "Hey there buddy. Your simulation results are ready for you."
+python send_message.py 3038675309 ver "Hey there buddy. Your simulation results are ready for you."
 
 ```
