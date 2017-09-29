@@ -18,17 +18,17 @@ echo " gmail_user, gmail_pwd = 'myusername', 'mypassword' " > credentials.py
 ### Disclaimer
 ---
 **THIS IS NOT A SECURE METHOD OF COMMUNICATION.** 
-If you can figure out how to use the gmail API, great! get in touch and help me out, because I know that is way better. But for now, this does the job. 
+If you can figure out how to use the Gmail API...Great! Get in touch and help me out please, because I know it is way better. But for now, this does the job. 
 
-Mostly it's used to send reminders and updates on remote jobs.
+Mostly I use this code to send reminders and updates on remote jobs.
 
 
 ---
 ### Usage
 
-To use, follow the comments in `send_message.py` or the following example:
+To use, follow the comments in `send_message.py` or the following example (be aware that some characters need to be specially encoded. If you want to add support for this, please submit a PR):
 
 ```
-python send_message.py 3038675309 verizon "Hey there buddy! Your simulation results are ready for you!"
+python send_message.py 3038675309 verizon "Hey there buddy. Your simulation results are ready for you."
 
 ```
