@@ -8,3 +8,15 @@ We suggest using a dummy account that is not linked to any personal information.
 If you can figure out how to use the gmail API, great! get in touch and help me out, because I know that is way better. But for now, this does the job. 
 
 Mostly it's used to send reminders and updates on remote jobs.
+
+_Dependencies_: smtplib
+
+---
+### Usage
+
+To use, follow the comments in `send_message.py` or the following example:
+
+```
+python send_message.py 3038675309 verizon "Hey there buddy! Your simulation results are ready for you!"
+
+```
