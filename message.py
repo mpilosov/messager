@@ -2,9 +2,13 @@ import smtplib
 from credentials import *
 # CREATE A credentials.py file with string variables gmail_user and gmail_pwd
 
-def send_email(recipient, message):
+
+def send_email(recipient, TEXT):
     TO = recipient if type(recipient) is list else [recipient]
-    FROM = 'Anon'
+    SUBJECT = "Automatic Message"
+    FROM = 'r3mind3rs@gmail.com'
+    message = """From: %s\nTo: %s\nSubject: %s\n\n%s
+    """ % (FROM, ", ".join(TO), SUBJECT, TEXT)
     try:
         server = smtplib.SMTP("smtp.gmail.com", 587)
         server.ehlo()
@@ -12,8 +16,8 @@ def send_email(recipient, message):
         server.login(gmail_user, gmail_pwd)
         server.sendmail(FROM, TO, message)
         server.close()
-        print '\t Message successfully sent.'
+        print('\t Message successfully sent.')
     except:
-        print "\t Failed to send message."
+        print("\t Failed to send message.")
 
 
